@@ -12,7 +12,7 @@ COPY package.json package-lock.json* ./
 
 # Stage de dependências
 FROM base AS deps
-RUN npm ci --only=production && npm cache clean --force
+RUN npm ci && npm cache clean --force
 
 # Stage de build
 FROM base AS builder

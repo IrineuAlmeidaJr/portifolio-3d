@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { SectionProps } from "@/src/types/section-props";
+import { SectionProps } from "@/types/section-props";
 
 export function Section({ id, title, children }: SectionProps) {
   const ref = useRef<HTMLDivElement>(null);
