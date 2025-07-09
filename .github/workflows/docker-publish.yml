@@ -81,4 +81,7 @@ jobs:
 
       # 9. Output das informações da imagem criada
       - name: Image digest
-        run: echo ${{ steps.meta.outputs.tags }} 
+        run: |
+          echo "Published image tags:"
+          echo "${{ steps.meta.outputs.tags }}" | tr '\n' ' '
+          echo "" 
