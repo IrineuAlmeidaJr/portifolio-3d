@@ -6,6 +6,7 @@ import { MapPin, Mail } from "lucide-react";
 import { GeometricShapes } from "../3d/GeometricShapes";
 import { PortfolioData } from "@/types/portfolio-data";
 import { useRef } from "react";
+import Image from "next/image";
 
 interface HeroProps {
   data: Pick<PortfolioData, 'name' | 'stack' | 'location' | 'contact' | 'profileImage'>;
@@ -42,7 +43,7 @@ export function HeroSection({ data }: HeroProps) {
           >
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-indigo-500 shadow-2xl">
-                <img src="/profile.jpg" alt={`${data.name}`} className="w-full h-full object-cover" />
+                <Image src="/profile.jpg" alt={`${data.name}`} width={320} height={320} className="w-full h-full object-cover" />
               </div>
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-indigo-500/10 to-purple-500/10"></div>
             </div>

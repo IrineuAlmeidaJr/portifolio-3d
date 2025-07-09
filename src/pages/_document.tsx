@@ -6,7 +6,6 @@ export default function Document() {
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Portfólio de Irineu Almeida Júnior, Desenvolvedor Fullstack .NET e Angular" />
-        <title>Irineu Almeida Júnior - ROINU Software</title>
         <meta property="og:url" content="https://roinusoftware.com.br"/>
       </Head>
       <body>
